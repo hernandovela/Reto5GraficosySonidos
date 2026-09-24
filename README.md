@@ -2,11 +2,19 @@
 
 Juego Android de tres en raya en Java. Tú juegas con X; Android juega con O.
 
+## Compatibilidad con Android
+
+La aplicación requiere **Android 7.0 (Nougat, API 24) o superior**, tanto en dispositivos físicos como en emuladores. Esta versión mínima está definida por `minSdk = 24` en `app/build.gradle.kts`.
+
+El proyecto usa `compileSdk = 37` y `targetSdk = 37` para compilar y definir el comportamiento de la aplicación; la versión mínima para instalarla sigue siendo Android 7.0.
+
+La ejecución se verificó en el emulador Small Phone con API 37.1; no se ha probado individualmente cada versión compatible.
+
 ## Abrir y ejecutar
 
 1. En Android Studio, selecciona **Open** y abre `Reto5GraficosySonidos`.
 2. Deja terminar la sincronización de Gradle. Usa el JDK integrado de Android Studio (21 o posterior).
-3. Selecciona la configuración `app` y un emulador Android API 24 o superior.
+3. Selecciona la configuración `app` y un emulador con Android 7.0 (API 24) o superior.
 4. Pulsa **Run ▶**. No necesita Internet ni permisos para jugar.
 
 Se utiliza el SDK 37, Android Gradle Plugin 9.3.2 y Gradle Wrapper 9.5.0 disponibles en el entorno de desarrollo. `local.properties` contiene la ruta local del SDK y no se publica.
